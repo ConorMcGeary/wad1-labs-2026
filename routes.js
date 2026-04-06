@@ -28,5 +28,11 @@ router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
 
 router.get('/stats', stats.createView);
 
+router.get('/searchCategory', dashboard.createView);
+
+router.get('/sortData', dashboard.createView);
+
+
+
 
 export default router;
