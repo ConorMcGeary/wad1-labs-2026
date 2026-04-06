@@ -8,17 +8,16 @@
     App Statistics
   </h3>
   <p>
-    The playlist app now contains:
+    The playlist app now contains: 
   </p>
   {{#with stats}}
-  <div class="ui center aligned grid">
-
+   <div class="ui center aligned grid">
     <div class="ui sixteen wide column">
-
       <div class="ui centered three statistics">
+
         <div class="ui statistic">
           <div class="value">
-            <i class="microphone icon"></i>
+            <i class="microphone icon"></i> 
           </div>
           <div class="label">
             {{displayNumPlaylists}} playlists
@@ -27,7 +26,7 @@
 
         <div class="ui red statistic">
           <div class="value">
-            <i class="music icon"></i>
+            <i class="music icon"></i> 
           </div>
           <div class="label">
             {{displayNumSongs}} songs
@@ -36,48 +35,57 @@
 
         <div class="ui blue statistic">
           <div class="value">
-            <i class="balance scale icon"></i>
+            <i class="balance scale icon"></i> 
           </div>
           <div class="label">
             Average songs per <br> playlist: {{displayAverage}}
           </div>
         </div>
-      </div>
-    </div>
 
+      </div>  
+    </div>
+   </div>
+
+   <div class="ui center aligned grid">
     <div class="ui sixteen wide column">
-      <div class="ui centered two statistics">
+      <div class="ui centered three statistics">
 
         <div class="ui yellow statistic">
           <div class="value">
             <i class="star icon"></i>
           </div>
           <div class="label">
-            Highest Rated playlists: {{highest}} stars
-            <table>
-              {{#each displayFav}}
-              <tr>
-                <td>{{this}}</td>
-              </tr>
-              {{/each}}
-            </table>
+            Highest Rated Playlists: {{highest}} Stars
+            {{#each displayFav}}
+              <br>{{uppercase this}}
+            {{/each}}
           </div>
         </div>
 
         <div class="ui green statistic">
           <div class="value">
-            <i class="dot circle outline icon"></i>
+            <i class="dot circle icon"></i>
           </div>
           <div class="label">
             Average Rating: {{displayAvgRating}}
           </div>
         </div>
-		
-      </div>
+
+        <div class="ui purple statistic">
+          <div class="value">
+            <i class="plus icon"></i>
+          </div>
+          <div class="label">
+            Largest Playlist: {{maxSongs}} Songs
+            {{#each largestPlaylists}}
+              <br>{{uppercase this}}
+            {{/each}}
+          </div>
+        </div>
+
+      </div>  
     </div>
-    
-  </div>
+   </div>
 
   {{/with}}
-
 </section>
