@@ -11,6 +11,18 @@
         "url": "https://res.cloudinary.com/web-app-dev-cm/image/upload/v1777037619/download_zu2ogj_ogi49n.jpg",
         "public_id": "download_zu2ogj_ogi49n"
       }
+    },
+    {
+      "id": "5a6c9d2c-a68f-4ca5-8b3a-53ed5e93e766",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Conor's Playlist ",
+      "rating": 6,
+      "songs": [],
+      "date": "2026-04-30T15:18:45.560Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/web-app-dev-cm/image/upload/v1777562325/wkilxj8zbskod8mlksgs.png",
+        "public_id": "wkilxj8zbskod8mlksgs"
+      }
     }
   ]
 }
